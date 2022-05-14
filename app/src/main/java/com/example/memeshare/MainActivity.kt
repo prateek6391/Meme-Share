@@ -14,6 +14,7 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.example.memeshare.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -81,7 +82,10 @@ class MainActivity : AppCompatActivity() {
         val chooser = Intent.createChooser(intent, "Share this meme using...")
         startActivity(chooser)
     }
+    var counter = 1
     fun nextMeme(view: View) {
+        counter++
+        count.text = counter.toString()
         loadMeme()
     }
 }
