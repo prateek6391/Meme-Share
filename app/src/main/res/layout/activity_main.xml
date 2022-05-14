@@ -26,6 +26,10 @@
         app:layout_constraintLeft_toLeftOf="@id/memeImageView"
         app:layout_constraintRight_toRightOf="@id/memeImageView" />
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d699169588f10686238359b6c06e996ceb350468
     <TextView
         android:id="@+id/count"
         android:layout_width="wrap_content"
